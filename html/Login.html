@@ -1,0 +1,57 @@
+<!DOCTYPE charset="UTF-8">
+<html>
+	<head>
+		<title>Login</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="../css/Styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+	</head>	
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p class="navbar-brand"> Favorite Websites </p>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Register.html"><span class="glyphicon glyphicon-user"></span> Register </a></li>
+					<li class="active"><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="center-block" id="LogPage">
+		<h1 id="logTilte">Welcome to the Site</h1>
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h5>Please Sign in Below</h5>
+				<form class="form-horizontal" id="myform2" onsubmit="event.preventDefault()">
+					<div class="form-group show">
+						<div class="col-sm-12 userInput">
+							<input type="text" name="Username" class="form-control col-xs-6" id="username" placeholder="Username" maxlength="20" required></div>
+					</div>
+					<div class="form-group show">
+						<div class="col-sm-12 passInput">
+							<input type="password" name="password" class="form-control col-xs-6" id="password" placeholder="Password" maxlength="20" required></div>
+					</div>
+					<div class="form-check">
+						<div class="col-sm-offset-.5 col-sm-10">
+							<div class="checkbox">
+								<label><input type="checkbox" value="remember-me"> Remember Me</label></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-1 col-sm-10">
+							<button id="logSign-in" type="submit" class="btn btn-default"> Sign in </button>
+							<button type="reset" class="btn btn-default"> Cancel </button></div>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+</html>
