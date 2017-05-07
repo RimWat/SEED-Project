@@ -1,0 +1,83 @@
+<!DOCTYPE charset="UTF-8">
+<html>
+	<head>
+		<title>Register</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="../css/Styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p class="navbar-brand"> Favorite Websites </p>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="Register.html"><span class="glyphicon glyphicon-user"></span> Register </a></li>
+					<li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="center-block">
+			<img id="guestLogo" alt="guest" src="../Images/GuestLogo.png"></img>
+			<div class="panel-group">
+			<div id="lBox" class="panel panel-default">
+				<div class="panel-heading">
+					<form class="form-horizontal" id="regForm"  onsubmit="event.preventDefault()">
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="userName" class="form-control; col-xs-6;" id="inputUsername" placeholder="Username" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="fName" class="form-control; col-xs-6;" id="inputFirstName" placeholder="First Name" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="lName" class="form-control; col-xs-6;" id="inputLastName" placeholder="Last Name" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="email" class="form-control; col-xs-6;" id="inputEmail" placeholder="Email"  data-error="Invalid email address" required>
+							</div>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input id="password" type="password" class="form-control; col-xs-6;" name="password" data-validation="email" placeholder="Password" required>
+							</div>
+						</div>						
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input id="confirmPassword" type="password" class="form-control; col-xs-6;" name="confirmPassword"  placeholder="Password" required>
+							</div>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-1 col-sm-10">
+								<div class="radio">
+									<label><input type="radio" name="male_female" value="Male"> Male </input></label>&nbsp;
+									<label><input type="radio" name="male_female" value="FemMale"> Female </input></label>
+								</div>
+							</div>
+						</div>
+						<div id="regSign-in" class="form-group">
+							<div class="col-sm-offset-1 col-sm-10">
+								<button id="register" type="submit" class="btn btn-default" > Register </button>
+								<button type="reset" class="btn btn-default"> Cancel </button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="../js/registration.js"></script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE charset="UTF-8">
+<html>
+	<head>
+		<title>Welcome</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="../css/Styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+	</head>	
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p class="navbar-brand"> Favorite Websites </p>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="AboutMe.html"> About Me </a></li>
+					<li><a href="Favorites.html"> Favorites </a></li>
+					<li><a href="FlashCards.html"> Flash Cards </a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Logout </a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="center-block">
+		<h1 id="greTitle"> Welcome to the Site </h1>
+		<div id="greBody">
+			<h3>Thank you for logging in you are now able to explore the site.</h3>
+			<h3>Hope you have a good time.</h3>
+		</div>
+		</div>
+	</body>
+	<script>
+$(function () {
+  var nua = navigator.userAgent
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+  if (isAndroid) {
+    $('select.form-control').removeClass('form-control').css('width', '100%')
+  }
+})
+</script>
+</html>
